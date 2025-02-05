@@ -254,13 +254,15 @@
 
 /*** Service ***/
 .service-item {
-    background: var(--light);
-    transition: .5s;
+    transition: transform 0.3s ease-in-out;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service-item:hover {
-    margin-top: -10px;
-    background: var(--primary);
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .service-item * {
@@ -271,8 +273,17 @@
     color: var(--light) !important;
 }
 
+.container-xxl {
+    background: linear-gradient(to right, #f9f9f9, #ffffff);
+}
+
 
 /*** Categories & Courses ***/
+.category a {
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
 .category img,
 .course-item img {
     transition: .5s;
@@ -280,7 +291,13 @@
 
 .category a:hover img,
 .course-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.category-overlay {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 
